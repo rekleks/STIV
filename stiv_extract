@@ -1,0 +1,11 @@
+# Import package
+import pandas as pd
+
+# Assign url of file: url
+url = 'http://web.mta.info/developers/data/nyct/turnstile/turnstile_191019.txt'
+
+# Read file into a DataFrame: df
+df = pd.read_csv(url, sep = ',')
+
+# Print the shape of the DataFrame
+print(df.shape)
